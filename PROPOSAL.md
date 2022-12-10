@@ -1,3 +1,8 @@
+Group consisting of:
+- Dario Romano - k01355351
+- Daniel Lindhuber - k12013218
+- Niklas Furtlehner - k12005918
+
 For our project we choose the following topic: "Explore Prometheus & Grafana to observe your application" with the following subtasks:
   - Instrument an application to expose metrics. Set up Prometheus to collect those metrics and to alert in case of
     issues. Set up Grafana to visualize your monitored applications.
