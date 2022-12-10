@@ -11,4 +11,4 @@ We structured the project into the subtasks below:
   - Define Alert Rules
   - Setup of Grafana
 
-Our application should create random numbers on request with vastly different runtimes on every request. 
+Our application should create a textual output (e.g. random numbers) on request with vastly differing runtimes to generate every request, or changing periodically. 
