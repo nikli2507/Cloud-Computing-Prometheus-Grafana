@@ -17,3 +17,6 @@ We structured the project into the subtasks below:
   - Setup of Grafana
 
 Our application should create a textual output (e.g. random numbers) on request with vastly differing runtimes to generate every request, or changing periodically. 
+
+Architectual diagram:
+![Architectual diagram](architectual_diagram.png "Architectual diagram")
