@@ -19,4 +19,5 @@ We structured the project into the subtasks below:
 Our application should create a textual output (e.g. random numbers) on request with vastly differing runtimes to generate every request, or changing periodically. 
 
 Architecture diagram:
-![Architecture diagram](architecture_diagram.png "Architecture diagram")
+
+![architecture](https://user-images.githubusercontent.com/44208537/206863463-10790ca3-6c89-4381-911d-8479326aa295.png)
