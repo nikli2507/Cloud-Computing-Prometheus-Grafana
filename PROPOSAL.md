@@ -8,13 +8,13 @@ For our project we choose the following topic: "Explore Prometheus & Grafana to 
     issues. Set up Grafana to visualize your monitored applications.
   - Demo: What can you see in Prometheus/Grafana? Run a simulation to cause an alert.
   
-We structured the project into the subtasks below:
-  - Installation with Helm
-  - Configuration
-  - Application development
-  - Expose metrics in the application
-  - Define Alert Rules
-  - Setup of Grafana
+We structured the project into the subtasks below and assigned them to team members:
+  - Installation with Helm - Dario, Daniel, Niklas
+  - Configuration - Dario, Daniel, Niklas
+  - Application development - Dario
+  - Expose metrics in the application - Niklas
+  - Define Alert Rules - Dario, Daniel, Niklas
+  - Setup of Grafana - Daniel
 
 Our application should create a textual output (e.g. random numbers) on request with vastly differing runtimes to generate every request, or changing periodically. 
 
