@@ -16,7 +16,7 @@ We structured the project into the subtasks below and assigned them to team memb
   - Define Alert Rules - Dario, Daniel, Niklas
   - Setup of Grafana - Daniel
 
-Our application should create a textual output (e.g. random numbers) on request with vastly differing runtimes to generate every request, or changing periodically. 
+Our application should create a composite output on request with vastly differing runtimes to generate every request. For this we will employ a dockerized MQTT server, and a number of MQTT clients. When a request is sent to a corresponding topic of the MQTT server, all dockerized client services shall produce their response, and send publish it to a pre-defined topic. That means the entire application will be self-contained with a number of microservices responding independently to the request. Since Docker images support extracting runtime metrics out of the box (according to [this documentation](https://docs.docker.com/config/containers/runmetrics/)) it will not be necessary to explicitly instrument the server and clients themselves. 
 
 We operate prometheus, grafana and our demo application in a kubernetes cluster. We have not yet decided on whether to use microsoft azure or google cloud but will for sure use a cloud hosted cluster and not a local one.
 
