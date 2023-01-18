@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client2
+  template:
+    metadata:
+      labels:
+        app: client2
+    spec:
+      containers:
+      - name: client2
+        image: efrecon/mqtt-client
+        command: ["mosquitto_pub"]
+        args: ["-p", "1883", "-h", "10.0.8.44", "-t", "goebe_bam_gurken", "-m", "{\"feinste_tiroler_bananen_num\":\"12\"}", "--repeat", "2000", "--repeat-delay", "30"]
+        ports:
+        - containerPort: 42214
