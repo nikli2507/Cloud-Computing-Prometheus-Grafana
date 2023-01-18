@@ -11,4 +11,4 @@ spec:
     targetPort: 1883
   selector:
     app: server
-  type: NodePort
+  type: LoadBalancer
