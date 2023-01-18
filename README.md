@@ -2,7 +2,7 @@
 
 ## Explanation
 ### Prometheus
-Prometheus is an infrastructure monitoring and alerting solution that monitors http applications by letting them expose metricts on a "/metrics" route which it then scrapes.
+Prometheus is an infrastructure monitoring and alerting solution that monitors http applications by letting them expose metrics on a "/metrics" route which it then scrapes.
 
 ### Grafana
 Grafana is an application that allows us to visualize our data and to add a nice UI for other functionality. In our case it has a UI for creating and managing alerts.
@@ -366,10 +366,17 @@ The default credentials for the login can be found in the documentation: https:/
 They currently are:
 - username: admin
 - password: prom-operator
-</br>
+
+#### Alerting
 Now grafana dashboards can be created and alerts configured with the (self explaining) alert UI.
 </br>
 The only thing to know is that our metrics are (like configured in values.yaml) prefixed with "mqtt_".
+</br>
+</br>
+Example rule:
+</b>
+
+![](https://user-images.githubusercontent.com/44208537/213181070-c32f579f-5c47-4375-b5fb-44b3914c1071.png)
 
 ## Lessons learned
 - There are many possible metrics to use, it's important to pick the right ones (see SLI, SLO).
