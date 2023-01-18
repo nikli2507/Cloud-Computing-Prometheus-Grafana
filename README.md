@@ -371,5 +371,18 @@ Now grafana dashboards can be created and alerts configured with the (self expla
 </br>
 The only thing to know is that our metrics are (like configured in values.yaml) prefixed with "mqtt_".
 
+## Lessons learned
+- There are many possible metrics to use, it's important to pick the right ones (see SLI, SLO).
 
+- Research in cloud technologies can save a lot of time.
+
+  - Many technologies are readily available already (e.g. Helm, Grafana, …)
+
+- Correct configuration can make or break a setup
+
+  - Time intervals in Prometheus and Grafana
+
+  - Errors in individual nodes
+
+- Cloud computing can feel a lot like system administration
 
