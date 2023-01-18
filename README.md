@@ -1,5 +1,18 @@
 # Cloud-Computing-Prometheus-Grafana
 
+## Explanation
+### Prometheus
+Prometheus is an infrastructure monitoring and alerting solution that monitors http applications by letting them expose metricts on a "/metrics" route which it then scrapes.
+
+### Grafana
+Grafana is an application that allows us to visualize our data and to add a nice UI for other functionality. In our case it has a UI for creating and managing alerts.
+
+### Prometheus Exporter
+The exporter is an application that is positioned between prometheus and the application we want to monitor. It created metrics and exposes them to prometheus on the "/metrics" route. This allows us to monitor applications without manually exposing metrics in the application itself. In our case the exporter is simply a MQTT client that gets its metrics over normal MQTT operations and then exposes them to prometheus.
+
+### Prometheus Stack
+The prometheus stack is simply a packed version of all the things we need. It contains the operator, which in turn contains all things prometheus, the grafana dashboard and a lot of configuration files and scripts that are needed to deploy a fully functional prometheus-grafana stack onto a kubernetes cluster.
+
 ## Installation
 
 Create a kubernetes cluster in a cloud environment or locally (e.g. with minikube) and connect it with kubectl.
